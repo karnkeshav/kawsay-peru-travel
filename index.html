@@ -1,3 +1,4 @@
+<!-- FILE: index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -127,7 +128,7 @@
     </div>
   </section>
 
-  <!-- Sección del Planificador de Itinerarios (Interactivo) -->
+  <!-- Sección del Planificador de Itinerarios -->
   <section id="planificador" class="section bg-alt">
     <div class="container">
       <div class="section-header">
@@ -137,7 +138,6 @@
       </div>
 
       <div class="planner-wrapper">
-        <!-- Formulario del Planificador -->
         <div class="card planner-card">
           <h3>Configura tu Viaje</h3>
           <form id="itineraryForm" class="planner-form">
@@ -182,19 +182,17 @@
           </form>
         </div>
 
-        <!-- Resultado del Itinerario -->
         <div class="itinerary-result-container">
           <div class="card result-card empty-state" id="itineraryResult">
             <div class="empty-icon">
               <i data-lucide="map"></i>
             </div>
             <h4>Tu itinerario aparecerá aquí</h4>
-            <p>Selecciona tus preferencias en el panel de la izquierda para generar una ruta personalizada y guardarla en tu cuenta.</p>
+            <p>Selecciona tus preferencias en el panel de la izquierda para generar una ruta personalizada.</p>
           </div>
         </div>
       </div>
 
-      <!-- Mis Itinerarios Guardados -->
       <div class="saved-itineraries-section" id="savedSection" style="display: none;">
         <h3 class="sub-title"><i data-lucide="bookmark"></i> Tus Planes Guardados</h3>
         <div class="saved-grid" id="savedGrid"></div>
@@ -208,11 +206,10 @@
       <div class="section-header">
         <span class="section-badge">Cultura Viva</span>
         <h2 class="section-title">Sabores y Experiencias Únicas</h2>
-        <p class="section-subtitle">Perú es reconocido mundialmente por su gastronomía y tradiciones milenarias. No te vayas sin probar esto.</p>
+        <p class="section-subtitle">Perú es reconocido mundialmente por su gastronomía y tradiciones milenarias.</p>
       </div>
 
       <div class="experiences-grid">
-        <!-- Experiencia 1 -->
         <div class="card experience-card">
           <div class="exp-img-wrapper">
             <img src="https://loremflickr.com/400/300/food,restaurant?lock=6" alt="Ceviche Peruano" onerror="this.style.display='none'">
@@ -220,7 +217,7 @@
           </div>
           <div class="exp-content">
             <h3>El Ceviche Clásico</h3>
-            <p>Pescado fresco marinado en zumo de limón sutil, acompañado de ají limo, cebolla morada, camote dulce y choclo tierno. Una explosión de frescura marina.</p>
+            <p>Pescado fresco marinado en zumo de limón sutil, acompañado de ají limo, cebolla morada, camote dulce y choclo tierno.</p>
             <div class="exp-footer">
               <span class="exp-meta"><i data-lucide="map-pin"></i> Costa Peruana</span>
               <button class="btn-text open-modal" data-exp="ceviche">Saber más <i data-lucide="arrow-right"></i></button>
@@ -228,7 +225,6 @@
           </div>
         </div>
 
-        <!-- Experiencia 2 -->
         <div class="card experience-card">
           <div class="exp-img-wrapper">
             <img src="https://loremflickr.com/400/300/food,restaurant?lock=7" alt="Lomo Saltado" onerror="this.style.display='none'">
@@ -236,7 +232,7 @@
           </div>
           <div class="exp-content">
             <h3>Lomo Saltado al Wok</h3>
-            <p>La perfecta fusión de la técnica china del wok con ingredientes peruanos: jugosos trozos de lomo de res, cebolla, tomates, ají amarillo y un toque de pisco.</p>
+            <p>La perfecta fusión de la técnica china del wok con ingredientes peruanos: jugosos trozos de lomo de res y ají amarillo.</p>
             <div class="exp-footer">
               <span class="exp-meta"><i data-lucide="map-pin"></i> Todo el Perú</span>
               <button class="btn-text open-modal" data-exp="lomo">Saber más <i data-lucide="arrow-right"></i></button>
@@ -244,15 +240,14 @@
           </div>
         </div>
 
-        <!-- Experiencia 3 -->
         <div class="card experience-card">
           <div class="exp-img-wrapper">
-            <img src="https://loremflickr.com/400/300/travel,landscape?lock=8" alt="Trekking Andino" onerror="this.style.display='none'">
+            <img src="https://loremflickr.com/400/300/travel,mountain?lock=8" alt="Trekking Andino" onerror="this.style.display='none'">
             <span class="exp-tag">Aventura</span>
           </div>
           <div class="exp-content">
             <h3>Trekking de la Cordillera</h3>
-            <p>Camina entre lagunas turquesas de origen glaciar, picos de más de 6,000 metros de altura y comunidades andinas que conservan tradiciones quechuas.</p>
+            <p>Camina entre lagunas turquesas de origen glaciar, picos de más de 6,000 metros de altura y comunidades quechuas.</p>
             <div class="exp-footer">
               <span class="exp-meta"><i data-lucide="map-pin"></i> Huaraz / Cusco</span>
               <button class="btn-text open-modal" data-exp="trek">Saber más <i data-lucide="arrow-right"></i></button>
@@ -263,64 +258,14 @@
     </div>
   </section>
 
-  <!-- Sección de Testimonios -->
-  <section class="section bg-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Comunidad</span>
-        <h2 class="section-title">Voces de Viajeros</h2>
-        <p class="section-subtitle">Descubre por qué miles de viajeros eligen explorar el Perú con nuestra asesoría experta.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="card testimonial-card">
-          <div class="test-stars">
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-          </div>
-          <p>"La ruta de 5 días que generamos para Cusco fue perfecta. Combinó visitas arqueológicas clásicas con restaurantes locales increíbles que no salen en las guías comunes."</p>
-          <div class="test-user">
-            <div class="test-avatar">AR</div>
-            <div>
-              <h4>Ananya Reddy</h4>
-              <span>Viajera de aventura (España)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card testimonial-card">
-          <div class="test-stars">
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-            <i data-lucide="star" class="star-fill"></i>
-          </div>
-          <p>"El soporte para reservar las entradas a Machu Picchu y el tour al Cañón del Colca fue inmediato. El servicio en Lima y Arequipa superó todas mis expectativas."</p>
-          <div class="test-user">
-            <div class="test-avatar">PM</div>
-            <div>
-              <h4>Pedro Mendoza</h4>
-              <span>Viajero cultural (Colombia)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Contacto y Reserva -->
+  <!-- Sección de Contacto -->
   <section id="contacto" class="section">
     <div class="container">
       <div class="contact-wrapper">
-        <!-- Info de Contacto -->
         <div class="contact-info">
           <span class="section-badge">Contacto</span>
           <h2 class="section-title-left">¿Listo para empezar tu viaje?</h2>
-          <p class="contact-lead">Escríbenos para recibir una cotización personalizada o resolver cualquier duda sobre visados, vacunas y la mejor época para viajar.</p>
+          <p class="contact-lead">Escríbenos para recibir una cotización personalizada o resolver cualquier duda sobre tu aventura.</p>
           
           <div class="contact-details">
             <div class="contact-detail-item">
@@ -330,59 +275,27 @@
                 <p>Av. Larco 770, Miraflores, Lima - 15074, Perú</p>
               </div>
             </div>
-
             <div class="contact-detail-item">
               <div class="contact-icon"><i data-lucide="phone"></i></div>
               <div>
-                <h4>Llámanos o escríbenos</h4>
-                <p>+51 1 444-2345 / +51 987 654 321</p>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-icon"><i data-lucide="mail"></i></div>
-              <div>
-                <h4>Correo Electrónico</h4>
-                <p>hola@perudestinos.pe</p>
+                <h4>Llámanos</h4>
+                <p>+51 1 444-2345</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Formulario de Consulta -->
         <div class="card contact-form-card">
           <h3>Solicita tu Asesoría Gratuita</h3>
           <form id="contactForm">
             <div class="form-group">
               <label for="contactName">Nombre Completo</label>
-              <input type="text" id="contactName" placeholder="Ej. Priya Sharma o Carlos Pérez" required>
+              <input type="text" id="contactName" placeholder="Ej. Carlos Pérez" required>
             </div>
-
             <div class="form-group">
               <label for="contactEmail">Correo Electrónico</label>
               <input type="email" id="contactEmail" placeholder="ejemplo@correo.com" required>
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contactDate">Fecha Estimada</label>
-                <input type="date" id="contactDate" required>
-              </div>
-              <div class="form-group">
-                <label for="contactBudget">Presupuesto (USD)</label>
-                <select id="contactBudget" required>
-                  <option value="mochilero">Económico (Mochilero)</option>
-                  <option value="estandar" selected>Estándar / Confort</option>
-                  <option value="lujo">Premium / Lujo</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="contactMessage">Mensaje o Detalles Especiales</label>
-              <textarea id="contactMessage" rows="4" placeholder="Cuéntanos qué actividades te gustaría incluir o si viajas con niños..." required></textarea>
-            </div>
-
             <button type="submit" class="btn btn-full">
               <i data-lucide="send"></i> Enviar Mi Solicitud
             </button>
@@ -392,48 +305,19 @@
     </div>
   </section>
 
-  <!-- Pie de Página -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#inicio" class="logo"><span class="logo-accent">Kawsay</span>Perú</a>
-        <p>Promovemos un turismo sostenible, respetuoso con las comunidades locales y el medio ambiente en todo el territorio peruano.</p>
-      </div>
-      <div>
-        <h4>Enlaces Rápidos</h4>
-        <ul class="footer-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#destinos">Destinos</a></li>
-          <li><a href="#planificador">Planificador de Viajes</a></li>
-          <li><a href="#experiencias">Sabores del Perú</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Soporte al Viajero</h4>
-        <ul class="footer-links">
-          <li><a href="#">Preguntas Frecuentes</a></li>
-          <li><a href="#">Seguro de Viaje</a></li>
-          <li><a href="#">Políticas de Cancelación</a></li>
-          <li><a href="#">Términos y Condiciones</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Kawsay Perú. Todos los derechos reservados. Desarrollado con pasión por la cultura andina.</p>
+    <div class="container footer-bottom">
+      <p>&copy; 2024 Kawsay Perú. Todos los derechos reservados. Nizampet, Hyderabad – 500090, Telangana, India.</p>
     </div>
   </footer>
 
-  <!-- Modal de Experiencias -->
   <div class="modal" id="experienceModal">
     <div class="modal-content card">
       <button class="modal-close" id="closeModal">&times;</button>
-      <div id="modalBody">
-        <!-- Contenido cargado dinámicamente -->
-      </div>
+      <div id="modalBody"></div>
     </div>
   </div>
 
-  <!-- Notificaciones Toast -->
   <div class="toast-container" id="toastContainer"></div>
 
   <script src="js/app.js"></script>
